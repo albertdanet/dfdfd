@@ -1,0 +1,21 @@
+name: STRIKEFORCE
+options:
+  bundleIdPrefix: com.albertdanet
+  deploymentTarget:
+    iOS: "16.0"
+targets:
+  STRIKEFORCE:
+    type: application
+    platform: iOS
+    sources:
+      - Sources
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.albertdanet.strikeforce
+        PRODUCT_NAME: STRIKE_FORCE
+        INFOPLIST_KEY_CFBundleDisplayName: STRIKE FORCE
+        INFOPLIST_KEY_UILaunchScreen_Generation: YES
+        SWIFT_VERSION: 5.0
+        TARGETED_DEVICE_FAMILY: "1,2"
+        GENERATE_INFOPLIST_FILE: YES
+        CODE_SIGNING_ALLOWED: NO
