@@ -1,7 +1,6 @@
-```yaml
 name: Build STRIKE FORCE IPA
 
-on:
+'on':
   workflow_dispatch:
   push:
     branches:
@@ -11,7 +10,6 @@ on:
 jobs:
   build-ipa:
     runs-on: macos-14
-
     steps:
       - name: Checkout source
         uses: actions/checkout@v4
@@ -48,4 +46,3 @@ jobs:
           path: STRIKE_FORCE.ipa
           if-no-files-found: error
           retention-days: 14
-```
